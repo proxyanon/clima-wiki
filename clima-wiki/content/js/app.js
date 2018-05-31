@@ -40,7 +40,7 @@ $(document).ready(function(){
 				// Esepeculativo / (PODE TIRAR)
 				if(celsius >= 21){
 					$('body').css('background-image', 'url("'+image_path+images[0]+'")');
-				}else if(celsius < 20 && celsius >= 18){
+				}else if(celsius <= 20 && celsius >= 18){
 					$('body').css('background-image', 'url("'+image_path+images[2]+'")');
 				}else if(celsius < 18){
 					$('body').css('background-image', 'url("'+image_path+images[1]+'")');
