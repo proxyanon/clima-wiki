@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Weather Wiki</title>
+	<!-- CSS importations -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/content/css/mdb.min.css" rel="stylesheet">
+    <link href="/content/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+	<section class="container">
+		<div class="row d-flex justify-content-center mt-5">
+			<div class="col-sm-8">
+				<p class="h1 text-white">Weather Wiki</p>
+				<div class="card mt-4 text-center">
+					<div class="card-body">
+						<h4 class="card-title" id="geo-info"><a></a></h4>
+						<img src="/content/img/site/load.gif" width="150" id="load">
+						<p class="h6 text-muted">Temperatura</p>
+						<p class="h2 my-4" id="temp"></p>
+						<p class="h7 mt-2 mb-4 font-weight-bold" id="text"></p>
+						<a href="#" class="btn btn-primary" id="celsius">Celsius</a>
+						<a href="#" class="btn btn-primary" id="fahrenheit">Fahrenheit</a>
+						<a href="#" class="btn btn-primary" id="kelvin">Kelvin</a>
+						<a href="#" class="btn btn-primary" id="refresh"><i class="fa fa-refresh" style="font-size: 20px;"></i></a>
+						<p class="card-text mt-4" id="description"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Scripts importations -->
+	<script type="text/javascript" src="/content/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/content/js/popper.min.js"></script>
+    <script type="text/javascript" src="/content/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/content/js/mdb.min.js"></script>
+    <script type="text/javascript" src="/content/js/app.js"></script>
+</body>
+</html>
