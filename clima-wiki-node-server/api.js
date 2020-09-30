@@ -21,8 +21,9 @@ app.use(function(req, res, next) { // Para evitar erros de permissoes
 });
 
 app.post('/temp', (req, res) => { // Handle para o caminho /temp
-	var city = req.body.city; // Cidade (ex: Recife)
-	var countryCode = req.body.countryCode; // Codigo do pais (ex: br)
+  const {city, countryCode} = req.body;
+	// Cidade (ex: Recife) - Código do Pais (ex: br)
+	
 	var searchText = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='"+city+", "+countryCode+"')&format=json" // Data query usada para a requisicao na API do yahoo
 	request('https://query.yahooapis.com/v1/public/yql?q='+searchText, {json:true}, (err, rs, body) => { // Request na API do yahoo para consultar o clima
 		if(err){
